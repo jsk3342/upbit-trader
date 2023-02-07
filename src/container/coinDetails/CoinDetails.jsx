@@ -43,7 +43,9 @@ export default function CoinDetails() {
           <div>전일대비</div>
           <div>거래대금</div>
         </CoinBoxHeader>
-        <Coin></Coin>
+        {markets.map((market) => (
+          <Coin key={market.market} market={market}></Coin>
+        ))}
       </CoinListBox>
     </div>
   );
