@@ -87,11 +87,11 @@ const CoinBoxVolume = styled.div`
   }
 `;
 
-export default function Coin() {
+export default function Coin({ market }) {
   return (
     <CoinBox>
       <CoinBoxName>
-        <div>test</div>
+        <div>{market.market}</div>
       </CoinBoxName>
       <CoinBoxPrice>112</CoinBoxPrice>
       <CoinBoxChange>
